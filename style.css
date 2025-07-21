@@ -154,6 +154,7 @@ main{
 
 .about-items{
     display: flex;
+    gap: 40px;
     justify-content: space-around;
 }
 
@@ -289,4 +290,102 @@ textarea{
     font-size: 20px;
     font-weight: bold;
     cursor: pointer;
+}
+
+/* Responsive Media Query */
+/** Small Device: 556px*/
+@media screen and (max-width: 556px) {
+    .header{
+        background-image: none;
+    }
+
+    nav, .banner, .skills-container, .resume-des, .footer{
+        flex-direction: column;
+    }
+    nav h3{
+        display: none;
+    }
+    .banner img{
+        width: 100%;
+        height: auto;
+    }
+
+    .banner{
+        margin: 15px 25px;
+    }
+
+    .banner-content{
+        max-width: none;
+        margin-top: 90px;
+        margin-bottom: 80px;
+    }
+
+    .about{
+        padding: 10px;
+    }
+
+    .about-items{
+        flex-wrap: wrap;
+    }
+    .imp-des{
+        padding: 10px;
+    }
+
+    .skill{
+        padding: 15px;
+        margin: 15px;
+    }
+
+    .degree-des{
+        margin: 0;
+        font-size: 13px;
+        padding-top: 10px;
+    }
+
+    .resume-des{
+        padding: 15px;
+    }
+
+    .footer{
+        padding: 25px;
+        align-items: center;
+    }
+
+    .left-footer, .right-footer{
+    width: 100%;
+    }
+
+    /*Font-Size**/
+    .primary-btn, nav ul li a, .item-title, .skills-title, .institution, .footer input[type="submit"]{
+        font-size: 16px;
+    }
+    .edex-title{
+        font-size: 18px;
+        margin-top: 20px;
+    }
+    .open-sense-h4, .my-edx-title{
+        font-size: 21px;
+    }
+    .open-sense-h1{
+        font-size: 42px;
+    }
+    .banner-des, .section-des, .skills-des, .left-footer-des{
+        font-size: 15px;
+    }
+
+    .section-title{
+        font-size: 30px;
+    }
+    .item-des{
+        font-size: 20px;;
+    }
+    .footer input[type="text"], input[type="email"], textarea{
+        font-size: 13px;
+        height: 60px;
+        padding: 14px 0 14px 20px;
+    }
+    textarea{
+        height: 120px;
+    }
+
 }
